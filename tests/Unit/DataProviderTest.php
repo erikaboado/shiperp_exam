@@ -28,12 +28,6 @@ class DataProviderTest extends TestCase
     /** @test */
     public function can_update_provider()
     {
-        // $providerData = [
-        //     'name' => 'Test Data Provider',
-        //     'url' => 'https://dog.ceo/api/breeds/image/random',
-        // ];
-
-        // $provider = DataProvider::create($providerData);
         $provider = DataProvider::factory()->create();
 
         $updatedData = [
@@ -49,12 +43,6 @@ class DataProviderTest extends TestCase
     /** @test */
     public function can_delete_provider()
     {
-        // $providerData = [
-        //     'name' => 'Test Data Providers',
-        //     'url' => 'https://dog.ceo/api/breeds/image/random',
-        // ];
-
-        // $provider = DataProvider::create($providerData);
         $provider = DataProvider::factory()->create();
 
         $provider->delete();
